@@ -1,5 +1,28 @@
 .titre {
-  color: darkblue;
-  font-size: 28px;
+  color: #2c3e50;
+  font-size: 32px;
   text-align: center;
+  margin: 20px 0;
+  padding: 15px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+nav {
+  text-align: center;
+  margin: 20px 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #2980b9;
+  text-decoration: underline;
 }

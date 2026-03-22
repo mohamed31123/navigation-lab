@@ -1,15 +1,14 @@
-import ListeTaches from './ListeTaches';
-
-import Logo from './logo';
-import LecteurAudio from './LecteurAudio';
+import TachesList from './TachesList';
+import Brand from './Brand';
+import AudioPlayer from './AudioPlayer';
 
 function Accueil() {
   return (
     <div>
-      <h2>Page d’accueil</h2>
-      <Logo />
-      <LecteurAudio />
-      <ListeTaches />
+      <h2>Bienvenue sur le tableau de bord</h2>
+      <Brand />
+      <AudioPlayer />
+      <TachesList />
     </div>
   );
 }

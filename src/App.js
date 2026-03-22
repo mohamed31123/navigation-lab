@@ -1,23 +1,24 @@
 import { Routes, Route, Link } from 'react-router-dom';
 import Accueil from './Accueil';
-import Apropos from './Apropos';
-import Connexion from './Connexion';
+import About from './About';
+import Auth from './Auth';
 import './App.css';
 
 function App() {
   return (
     <div>
-      <h1 className="titre">Mon Application React</h1>
-      <nav>
-        <Link to="/">Accueil</Link> |{" "}
-        <Link to="/apropos">À propos</Link>
+      <h1 className="titre">📱 Mon Tableau de Bord</h1>
+      <nav style={{ margin: '20px', padding: '10px', backgroundColor: '#f0f0f0' }}>
+        <Link to="/" style={{ marginRight: '15px' }}>🏠 Accueil</Link>
+        <Link to="/about">ℹ️ À propos</Link>
       </nav>
-      <Connexion />
+      <Auth />
       <Routes>
         <Route path="/" element={<Accueil />} />
-        <Route path="/apropos" element={<Apropos />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </div>
   );
 }
+
 export default App;
